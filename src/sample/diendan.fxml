@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.07788944723618091" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller6">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #1ccdff;">
+         <children>
+            <Label layoutX="262.0" layoutY="4.0" text="DIỄN ĐÀN">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <MediaView fitHeight="200.0" fitWidth="200.0" />
+            <TableView prefHeight="237.0" prefWidth="598.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Ngày đăng" />
+                <TableColumn prefWidth="133.0" text="Người đăng" />
+                  <TableColumn prefWidth="383.0" text="Câu hỏi" />
+              </columns>
+            </TableView>
+            <TextArea layoutY="248.0" prefHeight="74.0" prefWidth="446.0" />
+            <Button layoutX="275.0" layoutY="325.0" mnemonicParsing="false" onAction="#back" text="Trở về" />
+            <Button layoutX="479.0" layoutY="254.0" mnemonicParsing="false" text="Đặt câu hỏi" />
+            <Button layoutX="479.0" layoutY="285.0" mnemonicParsing="false" text="Tìm câu hỏi" />
+            <Button layoutX="477.0" layoutY="313.0" mnemonicParsing="false" onAction="#see" text="Xem chi tiết " />
+         </children></AnchorPane>
+  </items>
+</SplitPane>

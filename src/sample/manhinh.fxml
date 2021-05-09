@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="544.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="537.0" layoutX="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photo-1-15393166458431959316805.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="70.0" layoutY="89.0" prefHeight="25.0" prefWidth="123.0" style="-fx-background-color: #1ec3ff;" text="TÊN TÀI KHOẢN">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="account" layoutX="204.0" layoutY="89.0" prefHeight="25.0" prefWidth="228.0" />
+      <PasswordField fx:id="password" layoutX="204.0" layoutY="130.0" prefHeight="25.0" prefWidth="228.0" />
+      <Label layoutX="432.0" layoutY="378.0" text="LIÊN HỆ:0123456789" />
+      <Button layoutX="260.0" layoutY="175.0" mnemonicParsing="false" onAction="#Login" text="ĐĂNG NHẬP" />
+      <Button layoutX="148.0" layoutY="223.0" mnemonicParsing="false" text="QUÊN MẬT KHẨU" />
+      <Button layoutX="345.0" layoutY="223.0" mnemonicParsing="false" onAction="#Create" text="TẠO TÀI KHOẢN" />
+      <Label layoutX="92.0" layoutY="132.0" style="-fx-background-color: #1ec3ff;" text="MẬT KHẨU">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
